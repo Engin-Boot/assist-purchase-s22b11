@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using assist_purchase.Model;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace assist_purchase.Controllers
 {
@@ -26,9 +22,16 @@ namespace assist_purchase.Controllers
 
         // POST api/<OperationsController>
         [HttpPost("add")]
-        public void Post([FromBody] Model.ProductModel model)
+        public ActionResult Post([FromBody] Model.ProductModel model)
         {
-            _productModelRepository.AddProductModel(model);
+            if (model.ProductId!=null && model.ProductName!=null)
+            {
+                _productModelRepository.AddProductModel(model);
+                return CreatedAtAction($"Post", StatusCode(200));
+                ;
+            }
+
+            return BadRequest();
         }
 
         // PUT api/<OperationsController>/5
@@ -40,9 +43,22 @@ namespace assist_purchase.Controllers
 
         // DELETE api/<OperationsController>/5
         [HttpDelete("delete/{productId}")]
-        public void Delete(string productId)
+        public ActionResult Delete(string productId)
         {
-            _productModelRepository.RemoveProductModel(productId);
+            try
+            {
+                var model = _productModelRepository.GetProductModelByProductId(productId);
+                if (model == null)
+                    throw new Exception();
+                _productModelRepository.RemoveProductModel(productId);
+                return Ok();
+            }
+            catch(Exception e)
+            {
+                return NotFound();
+            }
+
+
         }
     }
 }

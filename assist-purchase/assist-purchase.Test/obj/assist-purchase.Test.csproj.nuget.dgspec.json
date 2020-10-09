@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
+        "projectName": "assist-purchase.Test",
+        "projectPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
+        "packagesPath": "C:\\Users\\Shweta Shinde\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shweta Shinde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj": {
+                "projectPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+        "projectName": "assist-purchase",
+        "projectPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+        "packagesPath": "C:\\Users\\Shweta Shinde\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shweta Shinde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

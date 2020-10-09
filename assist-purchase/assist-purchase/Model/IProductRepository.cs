@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace assist_purchase.Model
 {
@@ -11,5 +8,6 @@ namespace assist_purchase.Model
         void AddProductModel(ProductModel model);
         void UpdateProductModel(string productId, ProductModel newModel);
         void RemoveProductModel(string productId);
+        ProductModel GetProductModelByProductId(string productId);
     }
 }

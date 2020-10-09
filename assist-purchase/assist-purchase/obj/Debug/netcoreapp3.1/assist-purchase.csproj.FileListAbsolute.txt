@@ -10,11 +10,11 @@ C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assis
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.csprojAssemblyReference.cache
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.AssemblyInfoInputs.cache
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.AssemblyInfo.cs
-C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.csproj.CoreCompileInputs.cache
-C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.RazorTargetAssemblyInfo.cache
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\staticwebassets\assist-purchase.StaticWebAssets.Manifest.cache
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\staticwebassets\assist-purchase.StaticWebAssets.xml
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.dll
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.pdb
 C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.genruntimeconfig.cache
+C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.csproj.CoreCompileInputs.cache
+C:\Users\Shweta Shinde\source\repos\assist-purchase-s22b11\assist-purchase\assist-purchase\obj\Debug\netcoreapp3.1\assist-purchase.MvcApplicationPartsAssemblyInfo.cache

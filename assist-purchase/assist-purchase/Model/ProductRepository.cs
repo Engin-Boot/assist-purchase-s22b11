@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace assist_purchase.Model
 {
     public class ProductRepository : IProductRepository
     {
         static List<ProductModel> _productModelList;
+
         public ProductRepository()
         {
 
@@ -16,15 +16,28 @@ namespace assist_purchase.Model
             {
                 ProductId = "001",
                 ProductName = "Tom",
-                
+
             });
             _productModelList.Add(new ProductModel
             {
                 ProductId = "002",
                 ProductName = "Jerry",
-              
+
             });
 
+        }
+
+        public ProductModel GetProductModelByProductId(string productId)
+        {
+            try
+            {
+                var model = _productModelList.Find(model => model.ProductId == productId);
+                return model;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
         public void AddProductModel(ProductModel model)
         {
