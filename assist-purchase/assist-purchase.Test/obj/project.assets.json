@@ -3492,19 +3492,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shweta Shinde\\.nuget\\packages\\": {}
+    "C:\\Users\\Aayush\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
       "projectName": "assist-purchase.Test",
-      "projectPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
-      "packagesPath": "C:\\Users\\Shweta Shinde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\obj\\",
+      "projectPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
+      "packagesPath": "C:\\Users\\Aayush\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Shweta Shinde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3517,8 +3517,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj": {
-              "projectPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj"
+            "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj": {
+              "projectPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj"
             }
           }
         }

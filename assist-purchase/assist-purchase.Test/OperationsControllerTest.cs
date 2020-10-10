@@ -1,5 +1,6 @@
 using assist_purchase.Model;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using Xunit;
 
 namespace assist_purchase.Test
@@ -70,5 +71,42 @@ namespace assist_purchase.Test
             var badResponse = controller.Delete(notExistingProductId);
             Assert.IsType<NotFoundResult>(badResponse);
         }
+
+        [Fact]
+
+        public void Remove_ExistingProductIdPassed_ReturnsOkResponse()
+        {
+
+            var repository = GetMockProductRepository();
+            var controller = GetMockController(repository);
+            repository.AddProductModel(GetValidMockProductModel());
+            var existingProductId = "010";
+            var response = controller.Delete(existingProductId);
+            Assert.IsType<OkResult>(response);
+        }
+
+        [Fact]
+        public void Update_ExistingProductIdPassed_ReturnsOkResponse()
+        {
+            var repository = GetMockProductRepository();
+            var controller = GetMockController(repository);
+            var response = controller.Put("001", GetValidMockProductModel());
+            Assert.IsType<OkResult>(response);
+
+        }
+
+
+        [Fact]
+        public void Update_NotExistingProductIdPassed_ReturnsNotFoundResponse()
+        {
+            var repository = GetMockProductRepository();
+            var controller = GetMockController(repository);
+            var response = controller.Put("500", GetValidMockProductModel());
+            Assert.IsType<NotFoundResult>(response);
+
+        }
+
+
     }
 }
+

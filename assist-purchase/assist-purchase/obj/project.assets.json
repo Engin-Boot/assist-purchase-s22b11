@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Shweta Shinde\\.nuget\\packages\\": {}
+    "C:\\Users\\Aayush\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+      "projectUniqueName": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
       "projectName": "assist-purchase",
-      "projectPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
-      "packagesPath": "C:\\Users\\Shweta Shinde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shweta Shinde\\source\\repos\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\obj\\",
+      "projectPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+      "packagesPath": "C:\\Users\\Aayush\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Shweta Shinde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

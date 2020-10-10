@@ -36,9 +36,23 @@ namespace assist_purchase.Controllers
 
         // PUT api/<OperationsController>/5
         [HttpPut("update/{productId}")]
-        public void Put(string productId, [FromBody] Model.ProductModel model)
+        public ActionResult Put(string productId, [FromBody] Model.ProductModel model)
         {
-            _productModelRepository.UpdateProductModel(productId,model);
+            try
+            {
+                var model1 = _productModelRepository.GetProductModelByProductId(productId);
+                if (model1 == null)
+                    throw new Exception();
+
+                _productModelRepository.UpdateProductModel(productId, model);
+                return Ok();
+            }
+            catch(Exception e)
+            {
+                return NotFound();
+            }
+            
+
         }
 
         // DELETE api/<OperationsController>/5
