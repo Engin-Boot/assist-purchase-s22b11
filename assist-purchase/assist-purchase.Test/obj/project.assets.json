@@ -361,6 +361,15 @@
           "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         }
       },
+      "RestSharp/106.11.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.Collections/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -905,6 +914,9 @@
       "assist-purchase/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "RestSharp": "106.11.7"
+        },
         "compile": {
           "bin/placeholder/assist-purchase.dll": {}
         },
@@ -1355,6 +1367,22 @@
         "lib/netstandard2.0/NuGet.Frameworks.xml",
         "nuget.frameworks.5.0.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "RestSharp/106.11.7": {
+      "sha512": "NzndH096CTulvq+ihr7u1mBJ29oukdi9A8bypQJk+kaHxbRzTTrtgsEEQAb04ptTUZmQa7cgo7uF5z7NuEPX1Q==",
+      "type": "package",
+      "path": "restsharp/106.11.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.11.7.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "System.Collections/4.0.11": {
@@ -3485,6 +3513,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "RestSharp >= 106.11.7",
       "assist-purchase >= 1.0.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -3497,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
       "projectName": "assist-purchase.Test",
-      "projectPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
+      "projectPath": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\assist-purchase.Test.csproj",
       "packagesPath": "C:\\Users\\Aayush\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\obj\\",
+      "outputPath": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3517,8 +3546,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj": {
-              "projectPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj"
+            "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj": {
+              "projectPath": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj"
             }
           }
         }
@@ -3535,6 +3564,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.5.0, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.11.7, )"
           },
           "coverlet.collector": {
             "target": "Package",
@@ -3567,7 +3600,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

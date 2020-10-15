@@ -1,6 +1,8 @@
 using assist_purchase.Model;
 using Microsoft.AspNetCore.Mvc;
+using RestSharp;
 using System;
+using System.Net;
 using Xunit;
 
 namespace assist_purchase.Test
@@ -106,7 +108,15 @@ namespace assist_purchase.Test
 
         }
 
+        readonly RestClient _client = new RestClient("http://localhost:50664/api/Operations/");
+        [Fact]
 
+        public void StatusCodeTestForGetAllProducts()
+        {
+            RestRequest request = new RestRequest("allproducts", Method.GET);
+            IRestResponse response = _client.Execute(request);
+            Assert.True(response.StatusCode == (HttpStatusCode.OK));
+        }
     }
 }
 

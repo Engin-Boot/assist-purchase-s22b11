@@ -1,11 +1,40 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "RestSharp/106.11.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestSharp/106.11.7": {
+      "sha512": "NzndH096CTulvq+ihr7u1mBJ29oukdi9A8bypQJk+kaHxbRzTTrtgsEEQAb04ptTUZmQa7cgo7uF5z7NuEPX1Q==",
+      "type": "package",
+      "path": "restsharp/106.11.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.11.7.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "RestSharp >= 106.11.7"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Aayush\\.nuget\\packages\\": {}
@@ -13,11 +42,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+      "projectUniqueName": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
       "projectName": "assist-purchase",
-      "projectPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+      "projectPath": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
       "packagesPath": "C:\\Users\\Aayush\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\obj\\",
+      "outputPath": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +72,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.11.7, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -61,7 +96,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

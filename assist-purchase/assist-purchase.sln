@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assist-purchase", "assist-purchase\assist-purchase.csproj", "{08BDB330-D9D0-4964-9C92-9A31F3CCBCD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assist-purchase.Test", "assist-purchase.Test\assist-purchase.Test.csproj", "{061A1D33-F1CD-48D0-B9A7-55DAE7133977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assist-purchase.Test", "assist-purchase.Test\assist-purchase.Test.csproj", "{061A1D33-F1CD-48D0-B9A7-55DAE7133977}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

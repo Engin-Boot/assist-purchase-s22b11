@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1HvsIQT9i2Q9l4It5WaID018e9sYZXSwkjJEvRx9ry+URDo2ZB2HP0eWhh6SmbMZwtfPBVJNJgp+WZCibBwyzQ==",
+  "dgSpecHash": "qKGrHdL1wD12mXOy31rNzwvfoY5nZwN9da4IFfaatc4dd8xR/97nIMyvQ6W8B8iaIXCf/VIR8TI6Th0paKl9Pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aayush\\Source\\Repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Aayush\\source\\repos\\Engin-Boot\\assist-purchase-s22b11\\assist-purchase\\assist-purchase\\assist-purchase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aayush\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -197,8 +197,9 @@ C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\a
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.csprojAssemblyReference.cache
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.AssemblyInfoInputs.cache
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.AssemblyInfo.cs
-C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.csproj.CoreCompileInputs.cache
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.csproj.CopyComplete
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.dll
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.pdb
 C:\Users\Aayush\Source\Repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.genruntimeconfig.cache
+C:\Users\Aayush\source\repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\Aayush\source\repos\Engin-Boot\assist-purchase-s22b11\assist-purchase\assist-purchase.Test\obj\Debug\netcoreapp3.1\assist-purchase.Test.csproj.CoreCompileInputs.cache
