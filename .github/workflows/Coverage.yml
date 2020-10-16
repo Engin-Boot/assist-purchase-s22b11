@@ -16,13 +16,10 @@ jobs:
         with:
            dotnet-version: 3.1.101
         
-      - name: change directory
-        run: cd assist-purchase
-        
       - name: Generate coverage report
-        run: dotnet test --collect:"XPlat Code Coverage"
+        run: cd assist-purchase ; dotnet test --collect:"XPlat Code Coverage"
       
       - name: Check Coverage
-        run: powershell ./coverage.ps1 -linerate 1 -project assist-purchase.Test
+        run: powershell ./coverage.ps1 -linerate 1 -project assist-purchase/assist-purchase.Test
        
 
