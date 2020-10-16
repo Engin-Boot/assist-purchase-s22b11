@@ -15,6 +15,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
+     
+    - name: change directory
+      run: cd assist-purchase
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Run unit tests
