@@ -91,8 +91,7 @@ namespace assist_purchase.Controllers
         [HttpPost("sendemailsuccess")]
         public ActionResult Post([FromBody] Model.MailSender model)
         {
-            try
-            {
+            
                 Console.WriteLine(model.emailid+" "+model.productId);
                 string[] productid = model.productId.Split(" ");
                 OutlookMailHandler mail = new OutlookMailHandler();
@@ -113,11 +112,6 @@ namespace assist_purchase.Controllers
 
                 }
 
-            }
-            catch(Exception e)
-            {
-                return NotFound();
-            }
         }
 
 
