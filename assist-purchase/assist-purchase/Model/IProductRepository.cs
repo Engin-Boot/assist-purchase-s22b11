@@ -8,6 +8,7 @@ namespace assist_purchase.Model
         void AddProductModel(ProductModel model);
         void UpdateProductModel(string productId, ProductModel newModel);
         void RemoveProductModel(string productId);
+        bool CheckProductModel(string productId);
         ProductModel GetProductModelByProductId(string productId);
     }
 }

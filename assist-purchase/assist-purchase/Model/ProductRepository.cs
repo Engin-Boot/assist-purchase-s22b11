@@ -46,6 +46,7 @@ namespace assist_purchase.Model
 
         public IEnumerable<ProductModel> GetAllProducts()
         {
+          
             return _productModelList;
         }
 
@@ -54,6 +55,19 @@ namespace assist_purchase.Model
             ProductModel model = _productModelList.Find(model => model.ProductId == productId);
             _productModelList.Remove(model);
         }
+
+        public bool CheckProductModel(string productId)
+        {
+           for(int i=0;i<_productModelList.Count;i++)
+            {
+                if(_productModelList[i].ProductId==productId)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
 
         public void UpdateProductModel(string productId, ProductModel newModel)
         {

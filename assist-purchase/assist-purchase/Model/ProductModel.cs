@@ -1,4 +1,4 @@
-﻿
+﻿using Microsoft.AspNetCore.Http;
 
 namespace assist_purchase.Model
 {
@@ -6,5 +6,6 @@ namespace assist_purchase.Model
     {
         public string ProductId { get; set; }
         public string ProductName { get; set; }
+
     }
 }
