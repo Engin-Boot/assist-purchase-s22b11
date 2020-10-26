@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 import { Inject , Injectable} from '@angular/core';
 
 
-
+/* tslint:disable */
 @Component({
   selector: 'app-consumer',
   templateUrl: './consumer.component.html',

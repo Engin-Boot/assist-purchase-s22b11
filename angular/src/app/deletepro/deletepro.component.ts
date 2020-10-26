@@ -2,6 +2,7 @@ import { createElementCssSelector } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import {AccountsService} from '../services/account.services';
 
+/* tslint:disable */
 @Component({
   selector: 'app-deletepro',
   templateUrl: './deletepro.component.html',
