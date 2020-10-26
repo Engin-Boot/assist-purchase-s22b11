@@ -1,25 +1,25 @@
-# name: Coverage
+name: Coverage
  
-# on: 
-#     push:
-#         branches: [main]
+on: 
+    push:
+        branches: [main]
  
-# jobs:
-#   build:
+jobs:
+  build:
  
-#     runs-on: windows-latest
+    runs-on: windows-latest
  
-#     steps:
-#       - uses: actions/checkout@v1
-#       - name: Setup .NET Core
-#         uses: actions/setup-dotnet@v1
-#         with:
-#            dotnet-version: 3.1.101
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+           dotnet-version: 3.1.101
         
-#       - name: Generate coverage report
-#         run: cd assist-purchase ; dotnet test --collect:"XPlat Code Coverage"
+      - name: Generate coverage report
+        run: cd assist-purchase ; dotnet test --collect:"XPlat Code Coverage"
       
-#       - name: Check Coverage
-#         run: powershell ./coverage.ps1 -linerate 1 -project assist-purchase/assist-purchase.Test
+      - name: Check Coverage
+        run: powershell ./coverage.ps1 -linerate 1 -project assist-purchase/assist-purchase.Test
        
 
