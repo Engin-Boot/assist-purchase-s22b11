@@ -1,0 +1,59 @@
+<div class="fixed-header">
+  <h4>Philips Consumer Platform</h4>
+</div>
+<body>
+  
+<div class="row">
+<ng-container *ngFor="let val of value;let i=index" >
+  <div class="column" >
+    <img src={{val}} height="150px" wifth="100%"><br>
+    <p>{{object[i].productId}}</p>
+    <p>{{object[i].productName}}</p>
+  </div>
+</ng-container>
+</div>
+
+<div class="vertical-center" >
+  <button (click)="getProducts()" value="Submit">Get Product Details</button>
+</div>
+<button class="open-button" (click)="openForm()">Contact Us</button>
+<!-- 
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1>Share Details of Interested Product</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input [(ngModel)]="emailid" type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>ProductId</b></label>
+    <input [(ngModel)]="productid" type="text" placeholder="Enter ProductId" name="product" required>
+    <h6>* for more than one product enter more than one id separated by a space</h6>
+    <button type="submit" class="btn" (click)="detailssubmitted()">Submit</button>
+    <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+  </form>
+</div>
+-->
+
+<div class="form-popup" id="myForm">
+  <form (ngSubmit) = "f.form.valid" #f ="ngForm"  class="form-container">
+    <h1>Share Details of Interested Product</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input [(ngModel)]="emailid" type="email" placeholder="Enter Email" name="email" required #email="ngModel" pattern="[^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$]">
+    <span *ngIf="f.submitted && email.errors?.pattern" >Invalid Email Id</span>
+
+    <br>
+    <br>
+    <label for="psw"><b>ProductId</b></label>
+    <input [(ngModel)]="productid" type="text" placeholder="Enter ProductId" name="product" required #product="ngModel" pattern="[0-9]{3}">
+    <span *ngIf="f.submitted && product.errors?.pattern" >Invalid Product Id</span>
+    <h6>* for more than one product enter more than one id separated by a space</h6>
+    <button type="submit" class="btn" (click)="detailssubmitted()">Submit</button>
+    <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+  </form>
+</div>
+
+</body>
+
+<div class="fixed-footer">    
+</div>

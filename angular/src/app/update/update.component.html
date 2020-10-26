@@ -1,0 +1,29 @@
+<<div class="fixed-header">
+  <h4>Philips Subscriber Platform</h4>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <form (ngSubmit) = "g.form.valid" #g ="ngForm">
+    <h4>Enter Product Details to be updated</h4>
+   
+      <p><input type="text" class="form-control" [(ngModel)]="productid" name="addproductid" value="" placeholder="Product id" required #addproductid="ngModel"
+      pattern="[0-9]{3}"></p>
+      <span *ngIf="g.submitted && addproductid.errors?.required" >Please enter product Id</span>
+      <span *ngIf="g.submitted && addproductid.errors?.pattern" >Invalid product Id</span>
+
+
+      <p><input type="text" [(ngModel)]="productname" class="form-control"  name="addproductname" value="" placeholder="Product name" required #addproductname="ngModel"
+       pattern="[a-z]*"></p>
+      <span *ngIf="g.submitted && addproductname.errors?.required">Please enter product Name</span>
+      <span *ngIf="g.submitted && addproductname.errors?.pattern">Invalid product Name</span>
+
+     
+      <p class="submit"><button (click)="UpdateProduct()" value="Update Products">Update Products</button></p>
+    </form>
+</div>
+<div class="fixed-footer">    
+</div>

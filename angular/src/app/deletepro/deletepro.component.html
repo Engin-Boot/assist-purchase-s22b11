@@ -1,0 +1,29 @@
+<div class="fixed-header">
+  <h4>Philips Subscriber Platform</h4>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <form (ngSubmit) = "h.form.valid" #h ="ngForm">
+    <h4>Enter Product Details to be deleted</h4>
+   
+      <p><input type="text" class="form-control" [(ngModel)]="productid" name="deleteproductid" value="" placeholder="Product id" required #deleteproductid="ngModel"
+      pattern="[0-9]{3}"></p>
+      <span *ngIf="h.submitted && deleteproductid.errors?.required" >Please enter product Id</span>
+      <span *ngIf="h.submitted && deleteproductid.errors?.pattern" >Invalid product Id</span>
+
+
+      <p><input type="text" [(ngModel)]="productname" class="form-control"  name="deleteproductname"  value="" placeholder="Product name" required #deleteproductname="ngModel"
+       pattern="[a-z]*"></p>
+      <span *ngIf="h.submitted && deleteproductname.errors?.required">Please enter product Name</span>
+      <span *ngIf="h.submitted && deleteproductname.errors?.pattern">Invalid product Name</span>
+
+     
+      <p class="submit"><button (click)="DeleteProduct()" value="Delete Products">Delete Product</button></p>
+    </form>
+</div>
+<div class="fixed-footer">    
+</div>
