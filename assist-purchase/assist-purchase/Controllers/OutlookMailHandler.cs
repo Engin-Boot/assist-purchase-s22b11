@@ -17,10 +17,7 @@ namespace assist_purchase.Controllers
                 for (int i = 0; i < emailreceivers.Length; i++)
                 {
                     SmtpMail oMail = new SmtpMail("TryIt");
-                    if (!fileName.Equals(""))
-                    {
-                        oMail.AddAttachment(fileName);
-                    }
+                
                     // Your email address
                     oMail.From = "mayank.ranjan@philips.com";
 
