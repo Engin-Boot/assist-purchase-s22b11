@@ -21,10 +21,6 @@ namespace assist_purchase.Controllers
                     {
                         oMail.AddAttachment(fileName);
                     }
-                    else
-                    {
-
-                    }
                     // Your email address
                     oMail.From = "mayank.ranjan@philips.com";
 

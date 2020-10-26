@@ -46,19 +46,25 @@ namespace assist_purchase.Controllers
         [HttpPost("addpic")]
         public async Task<IActionResult> Upload(IFormFile file)
         {
-            if (file == null) throw new Exception("File is null");
-            if (file.Length == 0) throw new Exception("File is empty");
+            try
+            {
 
-            if (FileUpload.CheckIfPicFile(file))
-            {
-                await FileUpload.WriteFile(file, ProductId);
+                if (FileUpload.CheckIfPicFile(file))
+                {
+                    await FileUpload.WriteFile(file, ProductId);
+                    Productpeak.Add(ProductId);
+                    return CreatedAtAction($"Post", StatusCode(200));
+                }
+                else
+                {
+                    return BadRequest(new { message = "wrong file extension" });
+                }
             }
-            else
+            catch(Exception e)
             {
-                return BadRequest(new { message = "wrong file extension" });
+                return BadRequest(new { message = "File is Null or Empty" });
             }
-            Productpeak.Add(ProductId);
-            return CreatedAtAction($"Post", StatusCode(200));
+           
         }
 
         [HttpGet("getpic/{productId}")]
