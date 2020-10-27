@@ -20,6 +20,6 @@ jobs:
         run: cd assist-purchase ; dotnet test --collect:"XPlat Code Coverage"
       
       - name: Check Coverage
-        run: powershell ./coverage.ps1 -linerate 1 -project assist-purchase/assist-purchase.Test
+        run: powershell ./coverage.ps1 -project assist-purchase/assist-purchase.Test
        
 
