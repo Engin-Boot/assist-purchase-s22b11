@@ -120,14 +120,14 @@ namespace assist_purchase.Test
 
         }
 
-        [Fact]
+       /* [Fact]
         public void MailisSent_WhenValidCredentialsareGiven()
         {
             var repository = GetMockProductRepository();
             var controller = GetMockController(repository);
             var response = controller.Post(GetValidMailInformation());
             Assert.IsType<CreatedAtActionResult>(response);
-        }
+        }*/
 
         [Fact]
         public void GetPic_WhenValidProductIdisprovided_ReturnsPhysicalFile()
