@@ -1,8 +1,10 @@
 using assist_purchase.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RestSharp;
 using System;
 using System.Net;
+
 using Xunit;
 
 namespace assist_purchase.Test
@@ -37,6 +39,17 @@ namespace assist_purchase.Test
             };
             return mockModel;
         }
+
+        public MailSender GetValidMailInformation()
+        {
+            var mailsender = new MailSender
+            {
+               emailid="mayankranjan2018@gmail.com",
+               productId="001"
+            };
+            return mailsender;
+        }
+
         [Fact]
         public void Get_WhenCalled_ReturnsAllItems()
         {
@@ -44,7 +57,6 @@ namespace assist_purchase.Test
             var controller = GetMockController(repository);
             var response = controller.Get();
             Assert.Equal(response, repository.GetAllProducts());
-
         }
 
         [Fact]
@@ -108,7 +120,34 @@ namespace assist_purchase.Test
 
         }
 
-       
+        [Fact]
+        public void MailisSent_WhenValidCredentialsareGiven()
+        {
+            var repository = GetMockProductRepository();
+            var controller = GetMockController(repository);
+            var response = controller.Post(GetValidMailInformation());
+            Assert.IsType<CreatedAtActionResult>(response);
+        }
+
+        [Fact]
+        public void GetPic_WhenValidProductIdisprovided_ReturnsPhysicalFile()
+        {
+            var repository = GetMockProductRepository();
+            var controller = GetMockController(repository);
+            var response = controller.Get("001");
+            Assert.IsType<PhysicalFileResult>(response);
+        }
+
+        [Fact]
+        public void GetPic_WhenInValidProductIdisprovided_ReturnsBadRequest()
+        {
+            var repository = GetMockProductRepository();
+            var controller = GetMockController(repository);
+            var response = controller.Get("011");
+            Assert.IsType<BadRequestObjectResult>(response);
+        }
+
+
     }
 }
 
