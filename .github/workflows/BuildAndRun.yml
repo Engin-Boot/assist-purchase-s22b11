@@ -19,7 +19,7 @@ jobs:
     - name: Build with dotnet
       run: cd assist-purchase ; dotnet build --configuration Release
     - name: Run with dotnet
-      run: cd assist-purchase/assist-purchase ; dotnet run --configuration Release
+      run: cd assist-purchase/assist-purchase ; dotnet run 
     - name: Run unit tests
       run: cd assist-purchase ; dotnet test --configuration Release
      
