@@ -20,7 +20,7 @@ namespace assist_purchase.Test
 
         public OperationsControllerIntegrationTest()
         {
-            _restClient = new RestClient("http://localhost:50664/api/Operations");
+            _restClient = new RestClient("http://localhost:5000/api/Operations");
             _json = new JsonDeserializer();
         }
 
